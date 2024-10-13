@@ -12,7 +12,7 @@ import KidneyPage from './KidneyPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/nbwebsite/">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
