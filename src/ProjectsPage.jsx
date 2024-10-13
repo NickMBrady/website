@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom';
 import { Nav, NavLogoSection, NavLinkSection, NBTitle, LogoBox, LinkBox, Logo } from './NavBarComponent';
 import { BubbleDiv, KeywordBubble } from './Bubbles';
 
+import logoImg from "/assets/nb-logo.png";
+
 export default function ProjectsPage() {
   const navigate = useNavigate();
   return (
@@ -15,7 +17,7 @@ export default function ProjectsPage() {
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="/"><Logo src="/assets/nb-logo.png" alt="Logo" /> </a>
+            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>
