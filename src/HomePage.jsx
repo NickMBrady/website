@@ -8,17 +8,18 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Nav, NavLogoSection, NavLinkSection, NavAboutSection, NBTitle, LogoBox, LinkBox, Logo } from './NavBarComponent';
 import { useNavigate } from 'react-router-dom';
 
+import logoImg from "/assets/nb-logo.png";
+
 export default function HomePage(){
   const navigate = useNavigate();
 
   return (
     <>
-
       <GlobalStyle />  
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="#"><Logo src="/assets/nb-logo.png" alt="Logo" /> </a>
+            <a href="#"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>
