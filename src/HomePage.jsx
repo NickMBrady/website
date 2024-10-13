@@ -19,7 +19,7 @@ export default function HomePage(){
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
+            <a href="/nbwebsite"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>
