@@ -12,7 +12,7 @@ import KidneyPage from './KidneyPage';
 
 function App() {
   return (
-    <Router basename="/nbwebsite/">
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
