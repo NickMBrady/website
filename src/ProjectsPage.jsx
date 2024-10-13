@@ -8,6 +8,12 @@ import { Nav, NavLogoSection, NavLinkSection, NBTitle, LogoBox, LinkBox, Logo } 
 import { BubbleDiv, KeywordBubble } from './Bubbles';
 
 import logoImg from "/assets/nb-logo.png";
+import CEDImg from "/assets/CED/CED.jpg";
+import diffImg from "/assets/diffEDge/diffusionEdge.png";
+import orthoticImg from "/assets/orthotic/orthotic.jpg";
+import img3d from "/assets/3DEm/hero.webp";
+import kidney from "/assets/kidney/hero2.webp";
+import appImg from "/assets/intervalTimer/hero.jpg";
 
 export default function ProjectsPage() {
   const navigate = useNavigate();
@@ -54,7 +60,7 @@ export default function ProjectsPage() {
               </LeftCol>
               <RightCol>
                 <ImageWrapper>
-                  <ProjectImage src="/assets/CED/CED.jpg"/>
+                  <ProjectImage src={CEDImg}/>
                 </ImageWrapper>
               </RightCol>
             </Row>
@@ -71,7 +77,7 @@ export default function ProjectsPage() {
               </LeftCol>
               <RightCol>
                 <ImageWrapper>
-                  <ProjectImage src="/assets/diffEDge/diffusionEdge.png"/>
+                  <ProjectImage src={diffImg}/>
                 </ImageWrapper>
               </RightCol>
             </Row>
@@ -89,7 +95,7 @@ export default function ProjectsPage() {
               </LeftCol>
               <RightCol>
                 <ImageWrapper>
-                  <ProjectImage src="/assets/orthotic/orthotic.jpg"/>
+                  <ProjectImage src={orthoticImg}/>
                 </ImageWrapper>
               </RightCol>
             </Row>
@@ -107,7 +113,7 @@ export default function ProjectsPage() {
               </LeftCol>
               <RightCol>
                 <ImageWrapper>
-                  <ProjectImage src="/assets/3DEm/hero.webp"/>
+                  <ProjectImage src={img3d}/>
                 </ImageWrapper>
               </RightCol>
             </Row>
@@ -126,7 +132,7 @@ export default function ProjectsPage() {
               </LeftCol>
               <RightCol>
                 <ImageWrapper>
-                  <ProjectImage src="/assets/kidney/hero2.webp"/>
+                  <ProjectImage src={kidney}/>
                 </ImageWrapper>
               </RightCol>
             </Row>
@@ -143,7 +149,7 @@ export default function ProjectsPage() {
               </LeftCol>
               <RightCol>
                 <ImageWrapper>
-                  <ProjectImage src="/assets/intervalTimer/hero.jpg" alt="E-commerce Platform" />
+                  <ProjectImage src={appImg} alt="E-commerce Platform" />
                 </ImageWrapper>
               </RightCol>
             </Row>
@@ -184,6 +190,14 @@ const Main = styled.div`
   overflow-y: auto;
   scrollbar-width: none; /* Firefox */
   scrollbar-color: var(--dividing-line) var(--background); /* Firefox */
+  overflow-x: hidden;
+  @media (max-width: 800px) {
+    height: calc(100vh - 120px);
+  }
+
+  @media (max-width: 576px) {
+    height: calc(100vh - 75px);
+  }
 
 `;
 
@@ -320,6 +334,10 @@ const PlusSign = styled.div`
   font-size: 30px;
   color: var(--light-gray);
   pointer-events: none; /* Ensure the plus sign does not interfere with hover */
+
+  @media (max-width: 800px) {
+    display: none; /* Hide the plus sign on mobile devices */
+  }
 `;
 
 const Row = styled.div`

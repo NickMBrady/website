@@ -8,6 +8,8 @@ import { BubbleDiv, GithubBubble, KeywordBubble } from './Bubbles';
 
 import { Main, ContentContainer, BoldTitle, SubHeading, Paragraph, Image } from './ProjectComponents';
 
+import logoImg from "/assets/nb-logo.png";
+import diffEdgeImg from "/assets/diffEdge/diffusionEdge.png";
 export default function DiffusionEdgePage() {
 
   return (
@@ -16,7 +18,7 @@ export default function DiffusionEdgePage() {
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="/"><Logo src="/assets/nb-logo.png" alt="Logo" /> </a>
+            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>
@@ -51,7 +53,7 @@ export default function DiffusionEdgePage() {
                   <KeywordBubble>Software Development</KeywordBubble>
                   <KeywordBubble>Computer Vision</KeywordBubble>
           </BubbleDiv>
-          <Image src="/assets/diffEdge/diffusionEdge.png" alt="Orthotic Device" />
+          <Image src={diffEdgeImg} alt="Orthotic Device" />
           <SubHeading>
           Overview
           </SubHeading>

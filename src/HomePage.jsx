@@ -19,7 +19,7 @@ export default function HomePage(){
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="#"><Logo src={logoImg} alt="Logo" /> </a>
+            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>
@@ -50,9 +50,9 @@ export default function HomePage(){
           <DescriptionSection>
             <DescriptionText> Hi, I’m a student at <strong>Duke University</strong> interested in <strong>machine learning, software development, and biomedical engineering.</strong> </DescriptionText>
           </DescriptionSection>
-          <LowerLeftSection>
+          <LowerLeftSection onClick={() => navigate('/projects')}>
             <ProjectSection>
-              <ProjectContainer onClick={() => navigate('/projects')}>
+              <ProjectContainer>
                 <BoldTitle>Projects</BoldTitle>
                 <PlusIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
                   <rect fill="currentColor" x="24.5" width="1" height="50"/>

@@ -4,6 +4,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Nav, NavLogoSection, NavLinkSection, NBTitle, LogoBox, LinkBox, Logo } from './NavBarComponent';
+import logoImg from "/assets/nb-logo.png";
 
 export default function AboutPage() {
   return (
@@ -12,7 +13,7 @@ export default function AboutPage() {
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="/"><Logo src="/assets/nb-logo.png" alt="Logo" /> </a>
+            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>
@@ -93,6 +94,7 @@ const WideNavLinkSection = styled(NavLinkSection)`
 const Main = styled.div`
   flex-grow: 1;
   height: calc(100vh - 100px);
+  overflow-y: auto;
 `;
 
 const MainGrid = styled.div`

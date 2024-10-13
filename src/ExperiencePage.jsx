@@ -4,8 +4,8 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Nav, NavLogoSection, LogoBox, Logo, NBTitle, NavLinkSection, LinkBox } from './NavBarComponent';
-import {BubbleDiv, KeywordBubble } from './Bubbles';
 
+import logoImg from "/assets/nb-logo.png";
 export default function ExperiencePage() {
   return (
     <>
@@ -13,7 +13,7 @@ export default function ExperiencePage() {
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="/"><Logo src="/assets/nb-logo.png" alt="Logo" /> </a>
+            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>

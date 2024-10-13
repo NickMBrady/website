@@ -12,11 +12,11 @@ import "slick-carousel/slick/slick-theme.css";
 import { SampleNextArrow, SamplePrevArrow } from './SliderFunctions';
 import { Main, ContentContainer, BoldTitle, Paragraph, PdfContainer } from './ProjectComponents';
 
+import logoImg from "/assets/nb-logo.png";
 import PdfViewer from './PdfViewer';
+import pdfUrl from '/assets/3DEm/em3dp.pdf';
 
 export default function EM3DPPage() {
-
-  const pdfUrl = '/assets/3DEm/em3dp.pdf';
 
   const settings = {
     dots: true,
@@ -45,7 +45,7 @@ export default function EM3DPPage() {
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="/"><Logo src="/assets/nb-logo.png" alt="Logo" /> </a>
+            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>

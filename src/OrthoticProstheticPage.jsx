@@ -13,6 +13,20 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { SampleNextArrow, SamplePrevArrow } from './SliderFunctions';
 import { SliderContainer, Main, ContentContainer, BoldSubHeading, BoldTitle, SubHeading, ImageSliderDiv, SliderImage, Paragraph, Image } from './ProjectComponents';
+import logoImg from "/assets/nb-logo.png";
+import orthoticImg from "/assets/orthotic/moldingGif.gif";
+import orthoticOrthoticImg from "/assets/orthotic/orthotic.jpg";
+import img1 from "/assets/orthotic/1.jpg";
+import img2 from "/assets/orthotic/2.jpg";
+import img3 from "/assets/orthotic/3.jpg";
+import v2Img from "/assets/prosthetic/V2Socket.jpg";
+import smallSocket from "/assets/prosthetic/smallSocket.jpeg";
+import smallSocket2 from "/assets/prosthetic/smallSocket2.jpeg";
+
+import generationImg from "/assets/orthoticGen/generationGif.gif";
+import modelImg from "/assets/orthoticGen/3D models.png";
+import handshotImg from "/assets/orthoticGen/handShots.png";
+import outlineImg from "/assets/orthoticGen/foot outline.png";
 
 export default function OrthoticProstheticPage() {
 
@@ -54,7 +68,7 @@ export default function OrthoticProstheticPage() {
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="/"><Logo src="/assets/nb-logo.png" alt="Logo" /> </a>
+            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>
@@ -94,7 +108,7 @@ export default function OrthoticProstheticPage() {
             <KeywordBubble>Procedural Modeling</KeywordBubble>
             <KeywordBubble>Python</KeywordBubble>
           </BubbleDiv>
-          <Image src="/assets/orthotic/moldingGif.gif" alt="Orthotic Device" />
+          <Image src={orthoticImg} alt="Orthotic Device" />
           <SliderContainer>
             <div className="slider-container">
               <Slider {...settings}>
@@ -147,16 +161,16 @@ export default function OrthoticProstheticPage() {
             <div className="slider-container">
               <Slider {...settingsImage}>
                 <ImageSliderDiv>
-                  <SliderImage src="/assets/orthotic/orthotic.jpg" alt="Orthotic Device" />
+                  <SliderImage src={orthoticOrthoticImg} alt="Orthotic Device" />
                 </ImageSliderDiv>
                 <ImageSliderDiv>
-                  <SliderImage src="/assets/orthotic/1.jpg" alt="Orthotic Device" />
+                  <SliderImage src={img1} alt="Orthotic Device" />
                 </ImageSliderDiv>
                 <ImageSliderDiv>
-                  <SliderImage src="/assets/orthotic/2.jpg" alt="Orthotic Device" />
+                  <SliderImage src={img2} alt="Orthotic Device" />
                 </ImageSliderDiv>
                 <ImageSliderDiv>
-                  <SliderImage src="/assets/orthotic/3.jpg" alt="Orthotic Device" />
+                  <SliderImage src={img3} alt="Orthotic Device" />
                 </ImageSliderDiv>
               </Slider>
             </div>
@@ -175,13 +189,13 @@ export default function OrthoticProstheticPage() {
               <div className="slider-container">
                 <Slider {...settingsImage}>
                   <ImageSliderDiv >
-                    <SliderImage src="/assets/prosthetic/V2Socket.jpg" alt="Orthotic Device" />
+                    <SliderImage src={v2Img} alt="Orthotic Device" />
                   </ImageSliderDiv>
                   <ImageSliderDiv>
-                    <SliderImage src="/assets/prosthetic/smallSocket.jpeg" alt="Orthotic Device" />
+                    <SliderImage src={smallSocket} alt="Orthotic Device" />
                   </ImageSliderDiv>
                   <ImageSliderDiv>
-                    <SliderImage src="/assets/prosthetic/smallSocket2.jpeg" alt="Orthotic Device" />
+                    <SliderImage src={smallSocket2} alt="Orthotic Device" />
                   </ImageSliderDiv>
                 </Slider>
               </div>
@@ -206,16 +220,16 @@ export default function OrthoticProstheticPage() {
             <div className="slider-container">
               <Slider {...settingsImage}>
                 <ImageSliderDiv>
-                  <SliderImage src="/assets/orthoticGen/generationGif.gif" alt="Orthotic Device" />
+                  <SliderImage src={generationImg} alt="Orthotic Device" />
                 </ImageSliderDiv>
                 <ImageSliderDiv>
-                  <SliderImage src="/assets/orthoticGen/3D models.png" alt="Orthotic Device" />
+                  <SliderImage src={modelImg} alt="Orthotic Device" />
                 </ImageSliderDiv>
                 <ImageSliderDiv>
-                  <SliderImage src="/assets/orthoticGen/handShots.png" alt="Orthotic Device" />
+                  <SliderImage src={handshotImg} alt="Orthotic Device" />
                 </ImageSliderDiv>
                 <ImageSliderDiv>
-                  <SliderImage src="/assets/orthoticGen/foot outline.png" alt="Orthotic Device" />
+                  <SliderImage src={outlineImg} alt="Orthotic Device" />
                 </ImageSliderDiv>
               </Slider>
             </div>

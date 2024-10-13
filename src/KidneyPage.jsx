@@ -12,10 +12,11 @@ import "slick-carousel/slick/slick-theme.css";
 import {Main, ContentContainer, BoldTitle, SubHeading, Paragraph, Image, PdfContainer } from './ProjectComponents';
 
 import PdfViewer from './PdfViewer';
+import logoImg from "/assets/nb-logo.png";
+import pdfUrl from '/assets/kidney/kidneyPaper.pdf';
 
 export default function KidneyPage() {
 
-  const pdfUrl = '/assets/kidney/kidneyPaper.pdf';
 
   return (
     <>
@@ -23,7 +24,7 @@ export default function KidneyPage() {
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="/"><Logo src="/assets/nb-logo.png" alt="Logo" /> </a>
+            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>

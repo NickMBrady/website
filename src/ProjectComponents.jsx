@@ -74,6 +74,18 @@ export const ImageSliderDiv = styled.div`
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+  @media (max-width: 1200px) {
+    height: 600px;
+  }
+
+  @media (max-width: 800px) {
+    height: 500px;
+  }
+
+  @media (max-width: 600px) {
+    height: 400px;
+  }
 `
 
 export const SliderImage = styled.img`

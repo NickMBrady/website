@@ -11,6 +11,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { Main, ContentContainer, BoldTitle, SubHeading, Paragraph, Image } from './ProjectComponents';
 
+import logoImg from "/assets/nb-logo.png";
+import GUIssImg from "/assets/CED/GUIss.png";
 export default function OrthoticProstheticPage() {
 
   return (
@@ -19,7 +21,7 @@ export default function OrthoticProstheticPage() {
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="/"><Logo src="/assets/nb-logo.png" alt="Logo" /> </a>
+            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>
@@ -54,7 +56,7 @@ export default function OrthoticProstheticPage() {
             <KeywordBubble>Graphical User Interface</KeywordBubble>
             <KeywordBubble>Computer Vision</KeywordBubble>
           </BubbleDiv>
-          <Image src="/assets/CED/GUIss.png" alt="Orthotic Device" />
+          <Image src={GUIssImg} alt="Orthotic Device" />
           <SubHeading>
             Overview
           </SubHeading>
