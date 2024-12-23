@@ -45,7 +45,7 @@ export default function EM3DPPage() {
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="/nbwebsite"><Logo src={logoImg} alt="Logo" /> </a>
+            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>

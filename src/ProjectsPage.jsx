@@ -23,7 +23,7 @@ export default function ProjectsPage() {
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="/nbwebsite"><Logo src={logoImg} alt="Logo" /> </a>
+            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>
@@ -307,8 +307,6 @@ const Paragraph = styled.p`
   }
 `;
 
-
-
 const BoldTitle = styled.a`
   font-size: 40px;
   font-weight: bolder;
@@ -334,6 +332,7 @@ const PlusSign = styled.div`
   font-size: 30px;
   color: var(--light-gray);
   pointer-events: none; /* Ensure the plus sign does not interfere with hover */
+  /* background-color: var(--light-gray); */
 
   @media (max-width: 800px) {
     display: none; /* Hide the plus sign on mobile devices */

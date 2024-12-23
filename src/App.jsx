@@ -1,5 +1,5 @@
 import 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import HomePage from './HomePage';
 import ProjectsPage from './ProjectsPage';
 import ExperiencePage from './ExperiencePage';
@@ -12,7 +12,6 @@ import KidneyPage from './KidneyPage';
 
 function App() {
   return (
-    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
@@ -25,7 +24,6 @@ function App() {
         <Route path='/projects/electromagnetic3dprinting' element={<EM3DPPage />} />
         <Route path='/projects/kidneystonenavigation' element={<KidneyPage />} />
       </Routes>
-    </Router>
   );
 }
 
