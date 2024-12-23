@@ -19,7 +19,7 @@ export default function HomePage(){
       <Nav>
         <NavLogoSection>
           <LogoBox>
-            <a href="/"><Logo src={logoImg} alt="Logo" /> </a>
+            <a href="/nbwebsite/"><Logo src={logoImg} alt="Logo" /> </a>
             <NBTitle>Nick Brady</NBTitle>
           </LogoBox>
         </NavLogoSection>
@@ -48,7 +48,7 @@ export default function HomePage(){
             </SplineWrapper>
           </ImageSection>
           <DescriptionSection>
-            <DescriptionText> Hi, I’m a student at <strong>Duke University</strong> interested in <strong>machine learning, software development, and biomedical engineering.</strong> </DescriptionText>
+            <DescriptionText> Hi, I&apos;m a student at <strong>Duke University</strong> interested in <strong>machine learning, software development, and biomedical engineering.</strong> </DescriptionText>
           </DescriptionSection>
           <LowerLeftSection onClick={() => navigate('/projects')}>
             <ProjectSection>
