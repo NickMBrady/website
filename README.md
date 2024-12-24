@@ -1,2 +1,2 @@
 # Website
-Welcome to my computer science website!
+Welcome to the source code for my computer science portfolio.
