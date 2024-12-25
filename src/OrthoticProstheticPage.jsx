@@ -109,50 +109,45 @@ export default function OrthoticProstheticPage() {
             <KeywordBubble>Python</KeywordBubble>
           </BubbleDiv>
           <Image src={orthoticImg} alt="Orthotic Device" />
-          <SliderContainer>
+          <BoldSubHeading>
+            Orthotic Insert and Prosthetic Generative Algorithm
+          </BoldSubHeading>
+          <Paragraph>
+            The orthotic and prosthetic generative workflows operate in theree stages: image aquisition, algorithmic processing, and 3D generation.
+          </Paragraph>
+<SliderContainer style={{ paddingTop: 30 }}>
             <div className="slider-container">
-              <Slider {...settings}>
-                <div>
-                  <h3>
-                    <Card
-                      title="New Thermal Molding Workflow"
-                      date="January 24, 2024"
-                      description="Through testing of full-sized models, I have developed a new thermal workflow for molding of From prosthetic devices. First, the inner diameter of the device is widened using a tool capable of high-strength radial expansion. The device is then cooled in the expanded form and placed on the patient. Finally, a secondary heat source is used to reheat the device in-place. The second heat softly returns the socket to its original position, forming exactly to the residual limb."
-                    />
-                  </h3>
-                </div>
-                <div>
-                  <h3>
-                    <Card
-                      title="Form Prosthetic Socket V2 Developed"
-                      date="October 9, 2024"
-                      description="With my learnings from the original prototype, the new thermal molding workflow, and the invaluable experience of 2ft Prosthetics, I am pleased to announce Form Prosthetic Socket V2. This iteration has improved high-temperature resistance, a modified geometry for superior rigidity, and is natively compatible with hardware and silicone sleeves from ST&G Corporation. This model is currently undergoing a comprehensive evaluation by 2ft Prosthetics."
-                    />
-                  </h3>
-                </div>
-                <div>
-                  <h3>
-                    <Card
-                      title="Partnership with 2ft Prosthetics"
-                      date="October 9, 2024"
-                      description="I am overjoyed to announce the beginning of a partnership with 2ft Prosthetics, a nonprofit organization that serves amputees in underprivileged regions. One of the organization's engineers and I will continue the development of my moldable prosthetic socket and orthotic solutions and evaluate them for practical use."
-                    />
-                  </h3>
-                </div>
-                <div>
-                  <h3>
-                    <Card
-                      title="Completion of Orthotic and Prosthetic Generative Algorithms"
-                      date="November 8, 2023"
-                      description="Today marks the completion of the generative algorithms for my orthotic and prosthetic solutions. Users may now use the software workflow --- fully outlined on the documentation page --- to generate the digital model of their medical aid from only images of their anatomy."
-                    />
-                  </h3>
-                </div>
+              <Slider {...settingsImage}>
+                <ImageSliderDiv>
+                  <SliderImage src={generationImg} alt="Orthotic Device" />
+                </ImageSliderDiv>
+                <ImageSliderDiv>
+                  <SliderImage src={modelImg} alt="Orthotic Device" />
+                </ImageSliderDiv>
+                <ImageSliderDiv>
+                  <SliderImage src={handshotImg} alt="Orthotic Device" />
+                </ImageSliderDiv>
+                <ImageSliderDiv>
+                  <SliderImage src={outlineImg} alt="Orthotic Device" />
+                </ImageSliderDiv>
               </Slider>
             </div>
           </SliderContainer>
+          <SubHeading>
+            Orthotic Generation
+          </SubHeading>
+          <Paragraph>
+            A patient first traces their existing shoe insole on standard, letter paper and takes a picture. The script corrects for distortion and applies morphological operations to vertically align and segment the outline. The outline is measured using scale inferred from the paper and dimensions are passed to Blender, where an insole of specified height is constructed.
+          </Paragraph>
+          <SubHeading>
+            Prosthetic Generation
+          </SubHeading>
+          <Paragraph>
+            A patient first longitudinally places green markers of known distance on the appendage: two dorsally, two radially. A dorsal and radial picture is taken, and the two images undergo initial processing separately. The algorithm identifies the markers, then distortion corrects, scales, and vertically aligns the image. Multiple morphological operations are applied to segment and outline the apendage, per axis. The outline is measured using scale inferred from the markers, and dorsal and radial dimensions are passed to Blender at several cross sections. With an additional length criteria specified, a socket of specified curvature and size is constructed.
+          </Paragraph>
+
           <BoldSubHeading>
-            Projects
+            Applied Devices
           </BoldSubHeading>
           <SubHeading>
             Orthotic Insert
@@ -209,42 +204,6 @@ export default function OrthoticProstheticPage() {
           </Paragraph>
           <Paragraph>
             Project files and detailed forming instructions are available on Github.
-          </Paragraph>
-          <BoldSubHeading>
-            Orthotic Insert and Prosthetic Generative Algorithm
-          </BoldSubHeading>
-          <Paragraph>
-            The orthotic and prosthetic generative workflows operate in theree stages: image aquisition, algorithmic processing, and 3D generation.
-          </Paragraph>
-<SliderContainer style={{ paddingTop: 30 }}>
-            <div className="slider-container">
-              <Slider {...settingsImage}>
-                <ImageSliderDiv>
-                  <SliderImage src={generationImg} alt="Orthotic Device" />
-                </ImageSliderDiv>
-                <ImageSliderDiv>
-                  <SliderImage src={modelImg} alt="Orthotic Device" />
-                </ImageSliderDiv>
-                <ImageSliderDiv>
-                  <SliderImage src={handshotImg} alt="Orthotic Device" />
-                </ImageSliderDiv>
-                <ImageSliderDiv>
-                  <SliderImage src={outlineImg} alt="Orthotic Device" />
-                </ImageSliderDiv>
-              </Slider>
-            </div>
-          </SliderContainer>
-          <SubHeading>
-            Orthotic Generation
-          </SubHeading>
-          <Paragraph>
-            A patient first traces their existing shoe insole on standard, letter paper and takes a picture. The script corrects for distortion and applies morphological operations to vertically align and segment the outline. The outline is measured using scale inferred from the paper and dimensions are passed to Blender, where an insole of specified height is constructed.
-          </Paragraph>
-          <SubHeading>
-            Prosthetic Generation
-          </SubHeading>
-          <Paragraph>
-            A patient first longitudinally places green markers of known distance on the appendage: two dorsally, two radially. A dorsal and radial picture is taken, and the two images undergo initial processing separately. The algorithm identifies the markers, then distortion corrects, scales, and vertically aligns the image. Multiple morphological operations are applied to segment and outline the apendage, per axis. The outline is measured using scale inferred from the markers, and dorsal and radial dimensions are passed to Blender at several cross sections. With an additional length criteria specified, a socket of specified curvature and size is constructed.
           </Paragraph>
         </ContentContainer>
       </Main>

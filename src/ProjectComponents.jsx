@@ -86,6 +86,7 @@ export const PdfContainer = styled.div`
 
 export const ImageSliderDiv = styled.div`
   height: 700px;
+  /* height: auto; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,8 +105,30 @@ export const ImageSliderDiv = styled.div`
   }
 `
 
+export const FullHeightImageSliderDiv = styled.div`
+  height: 70vh;
+  /* height: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+`
+
+
 export const SliderImage = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
+`
+
+export const SliderImg2 = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+`
+
+export const HCenter = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 `

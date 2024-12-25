@@ -14,6 +14,8 @@ import orthoticImg from "/assets/orthotic/orthotic.jpg";
 import img3d from "/assets/3DEm/hero.webp";
 import kidney from "/assets/kidney/hero2.webp";
 import appImg from "/assets/intervalTimer/hero.jpg";
+import herdImg from "/assets/herd/herdImg.png";
+import herdImg2 from "/assets/herd/herdImg2.png";
 
 export default function ProjectsPage() {
   const navigate = useNavigate();
@@ -47,6 +49,24 @@ export default function ProjectsPage() {
             <BoldTitle>Projects</BoldTitle>
           </ProjectsSection>
           <ContentSection>
+            <Row onClick={() => navigate('/projects/herd')}>
+              <PlusSign>+</PlusSign>
+              <LeftCol>
+                <ProjectTitle>Herd: Music App</ProjectTitle>
+                <Paragraph>Wrote the complete front end for an upcoming mobile app Herd. Includes Home, Search, Account, Ranking, Following, Introduction, and Settings screens. Connected through Supabase backend.</Paragraph>
+                <BubbleDiv>
+                  <KeywordBubble>Software Development</KeywordBubble>
+                  <KeywordBubble>Graphical User Interface</KeywordBubble>
+                  <KeywordBubble>Javascript</KeywordBubble>
+                  <KeywordBubble>React Native</KeywordBubble>
+                </BubbleDiv>
+              </LeftCol>
+              <RightCol>
+                <ImageWrapper>
+                  <ProjectImage src={herdImg2}/>
+                </ImageWrapper>
+              </RightCol>
+            </Row>
             <Row onClick={() => navigate('/projects/compositeelementdetection')}>
               <PlusSign>+</PlusSign>
               <LeftCol>
@@ -84,36 +104,18 @@ export default function ProjectsPage() {
             <Row onClick={() => navigate('/projects/orthoticprosthetic')}>
               <PlusSign>+</PlusSign>
               <LeftCol>
-                <ProjectTitle>Moldable, Algoritmically Generated Prosthetic and Orthotic Devices</ProjectTitle>
+                <ProjectTitle>Algoritmically Generated Prosthetic and Orthotic Devices</ProjectTitle>
                 <Paragraph>Developed a novel moldable workflow for open-source orthotic and prosthetic solutions with superior functionality and comfort. Wrote software to generate medical device size and shape from only multi-axial pictures of patient appendages. Collaborating with 2ft Prosthetics on prototyping and deployment.</Paragraph>
                 <BubbleDiv>
-                  <KeywordBubble>Material Dynamics</KeywordBubble>
-                  <KeywordBubble>3D Printing</KeywordBubble>
                   <KeywordBubble>Procedural Modeling</KeywordBubble>
                   <KeywordBubble>Python</KeywordBubble>
+                  <KeywordBubble>OpenCV</KeywordBubble>
+                  <KeywordBubble>3D Printing</KeywordBubble>
                 </BubbleDiv>
               </LeftCol>
               <RightCol>
                 <ImageWrapper>
                   <ProjectImage src={orthoticImg}/>
-                </ImageWrapper>
-              </RightCol>
-            </Row>
-            <Row onClick={() => navigate('/projects/electromagnetic3dprinting')}>
-              <PlusSign>+</PlusSign>
-              <LeftCol>
-                <ProjectTitle>Enhancing FDM 3D Printing with Electromagnetic Control</ProjectTitle>
-                <Paragraph>Developed a software and hardware system to actively predict and cancel system vibrations, eliminating print artifacts using rapid electromagnetic actuation to produce inverse vibrations in the extruder. Created workflow employing high-frequency electromagnetic pulses to create fine surface patterns on printed objects, achieving an aesthetic texture that hides print layer lines without sacrificing dimensional accuracy, material overuse, or print time.</Paragraph>
-                <BubbleDiv>
-                  <KeywordBubble>3D Printing</KeywordBubble>
-                  <KeywordBubble>Electronics and Microcontrollers</KeywordBubble>
-                  <KeywordBubble>Procedural Modeling</KeywordBubble>
-                  <KeywordBubble>C++</KeywordBubble>
-                </BubbleDiv>
-              </LeftCol>
-              <RightCol>
-                <ImageWrapper>
-                  <ProjectImage src={img3d}/>
                 </ImageWrapper>
               </RightCol>
             </Row>
